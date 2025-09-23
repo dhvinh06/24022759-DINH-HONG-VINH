@@ -39,7 +39,7 @@ public:
             tmp->next = head;
             head = tmp;
         }size++; //O(1)
-    }
+    } //O(1)
 
     void addAtTail(int val) {
         Node* tmp = new Node(val);
@@ -111,7 +111,7 @@ public:
         while (head){
             cout <<head->value<<" ";
             head=head->next;
-        }
+        } //O(N)
     }void duyetnguoc (Node* head){
         vector <Node*> tmp;
         while (head){
@@ -121,5 +121,6 @@ public:
         }for (int i=tmp.size();i>=0;i--){
             cout <<tmp[i]->value<<" ";
         }
-    }
+    }//O(N)
 };
+
