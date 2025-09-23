@@ -1,7 +1,10 @@
 class List {
-    int size=-1;
+    int size;
     int storage=1000;
     int *n =new int [storage];
+    List (){
+        size = -1;
+    }
     void newstorage (){
         int *m = new int [storage *2];
         for (int i=0;i<=size;i++){
@@ -61,3 +64,4 @@ class List {
 int main (){
     return 0;
 }
+
