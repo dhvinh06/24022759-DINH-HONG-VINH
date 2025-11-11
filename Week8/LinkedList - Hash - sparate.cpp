@@ -24,10 +24,9 @@ public:
         return (hash<int>{}(val)) % M;
     }
 
-public:
     SeparateChainingHashST(int M = 97) : M(M), st(M, nullptr) {}
 
-    ~SeparateChainingHashST() {
+    SeparateChainingHashST() {
         for (int i = 0; i < M; ++i) {
             Node* x = st[i];
             while (x != nullptr) {
