@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <cstring> // Dùng cho memset
 
 using namespace std;
 
